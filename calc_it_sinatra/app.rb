@@ -45,3 +45,12 @@ post "/mortgage" do
   @title = "Welcome to Mortgage Calculator"
   erb(:mortgage)
 end
+
+post "/bmi" do
+  units = params[:units]
+  mass = params[:mass].to_f
+  height = params[:height].to_f
+  @result = Calculator.bmi(units, mass, height)
+  @title = "Welcome to BMI Calculator"
+  erb(:bmi)
+end
