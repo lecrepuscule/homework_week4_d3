@@ -13,4 +13,8 @@ class Calculator
     end
   end
 
+  def self.mortgage(loan, apr, term)
+    loan * apr * ( ( 1 + apr )**term ) /( (1 + apr) ** term - 1)
+  end
+
 end

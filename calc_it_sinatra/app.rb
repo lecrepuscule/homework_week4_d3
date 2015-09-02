@@ -37,3 +37,11 @@ post "/basic" do
   erb(:basic)
 end
 
+post "/mortgage" do
+  loan = params[:loan].to_f
+  apr = params[:apr].to_f
+  term = params[:term].to_f
+  @result = Calculator.mortgage(loan, apr, term)
+  @title = "Welcome to Mortgage Calculator"
+  erb(:mortgage)
+end
