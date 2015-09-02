@@ -2,8 +2,29 @@ body {
   background: aquamarine;
 }
 
+li {
+  display: inline-block;
+  text-align: center;
+}
+
+ul {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+.calc-type {
+  text-align: center;
+  margin: 0 auto;
+}
+
+
 .answer {
   height: 80px;
   width: 80px;
   border: 1px solid black;
+  text-align: center;
+  margin: 0 auto;
 }

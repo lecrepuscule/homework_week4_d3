@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Calc It!</title>
+  <title class="calc-type">Calc It!</title>
   <link rel="stylesheet" href="/style.css">
 </head>
 
@@ -19,7 +19,7 @@
   <%= yield %>
 
   <% if @result %>
-  <p><%= @result %></p>
+  <div class="answer"><%= @result %></div>
   <% end %>
 
 </body>

@@ -18,6 +18,8 @@ describe Calculator do
     expect(Calculator.basic(73, 4, "/")).to eq (73/4).to_f
   end
 
+  # 2meters 75kg 18?
+
   # it "should be able to do mortgage calculation" do
   #   expect(Calculator.mortgage(100000, 0.001, ))
   # end
