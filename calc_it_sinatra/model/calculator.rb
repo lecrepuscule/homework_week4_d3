@@ -22,4 +22,11 @@ class Calculator
     (units == "imperial") ? bmi * 703 : bmi;
   end
 
+  def self.distance(distance, speed, mpg, cost)
+    time = (distance / speed).to_f
+    actual_mpg = (mpg > 60) ? [0, mpg - (speed - 60) * 2].max : mpg
+    cost = (distance / actual_mpg * cost).to_f
+    [time, cost]
+  end
+
 end

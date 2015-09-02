@@ -54,3 +54,13 @@ post "/bmi" do
   @title = "Welcome to BMI Calculator"
   erb(:bmi)
 end
+
+post "/distance" do
+  distance = params[:distance].to_f
+  speed = params[:speed].to_f
+  mpg = params[:mpg].to_f
+  cost = params[:cost].to_f
+  @result = Calculator.distance(distance, speed, mpg, cost)
+  @title = "Welcome to Distance Calculator"
+  erb(:distance)
+end
