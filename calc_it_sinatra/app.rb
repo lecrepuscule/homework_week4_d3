@@ -1,5 +1,7 @@
 require "sinatra"
 require "sinatra/reloader" if development?
+require "pry"
+require_relative "model/calculator"
 
 get "/" do
   @title = "Welcome to Calc It"
@@ -27,6 +29,11 @@ get "/distance" do
 end 
 
 post "/basic" do
-  
+  num1 = params[:num1].to_f
+  num2 = params[:num2].to_f
+  operation = params[:operation]
+  @result = Calculator.basic(num1, num2, operation)
+  @title = "Welcome to Basic Calculator"
+  erb(:basic)
 end
 

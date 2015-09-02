@@ -18,7 +18,9 @@
 
   <%= yield %>
 
-  <div class="answer"></div>
+  <% if @result %>
+  <p><%= @result %></p>
+  <% end %>
 
 </body>
 </html>
