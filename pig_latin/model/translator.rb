@@ -4,10 +4,11 @@ class Translator
     vowels = ["a", "e", "i", "o", "u"]
     word.downcase!
     if vowels.include? word[0]
-      new_word = word.concat("ay")
+      word << "ay"
     else
+      (word << word[0] << "ay")[0] = ""
     end
-    new_word
+    word
   end
 
 end
