@@ -25,3 +25,8 @@ get "/distance" do
   @title = "Welcome to Distance Calculator"
   erb(:distance)
 end 
+
+post "/basic" do
+  
+end
+

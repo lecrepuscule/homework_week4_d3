@@ -1,3 +1,9 @@
 body {
   background: aquamarine;
 }
+
+.answer {
+  height: 80px;
+  width: 80px;
+  border: 1px solid black;
+}
