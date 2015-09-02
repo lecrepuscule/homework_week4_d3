@@ -1,1 +1,15 @@
 <h1><%= @title %></h1>
+
+<form action="/basic" method="post">
+  <input name="num1">
+  <select name="operation">
+    <option value="+">Plus</option>
+    <option value="-">Minus</option>
+    <option value="*">Multiple</option>
+    <option value="/">Divided by</option>
+    <option value="**">to the Power of</option>
+    <option value="sqrt">Square Root</option>
+  </select>
+  <input name="num2">
+  <button>calculate</button>
+</form>
