@@ -1,8 +1,8 @@
 <h1 class="calc-type"><%= @title %></h1>
 
 <form action="/mortgage" method="post">
-  <div>Loan<input name="loan"></div>
-  <div>APR<input name="apr"></div>
-  <div>Term<input name="term"></div>
+  <div>Loan<input name="loan" type="number" step="any"></div>
+  <div>APR<input name="apr" type="number" step="any"></div>
+  <div>Term<input name="term" type="number" step="any"></div>
   <button>calculate</button>
 </form>

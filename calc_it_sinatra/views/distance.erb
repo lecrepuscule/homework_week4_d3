@@ -1,9 +1,9 @@
 <h1 class="calc-type"><%= @title %></h1>
 
 <form action="/distance" method="post">
-  <div>Distance<input name="distance"></div>
-  <div>MPG<input name="mpg"></div>
-  <div>Cost<input name="cost"></div>
-  <div>Speed<input name="speed"></div>
+  <div>Distance<input name="distance" type="number" step="any"></div>
+  <div>MPG<input name="mpg" type="number" step="any"></div>
+  <div>Cost<input name="cost" type="number" step="any"></div>
+  <div>Speed<input name="speed" type="number" step="any"></div>
   <button>calculate</button>
 </form>

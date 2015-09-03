@@ -1,14 +1,14 @@
 <h1 class="calc-type"><%= @title %></h1>
 
 <form action="/basic" method="post">
-  <input name="num1">
+  <input name="num1" type="number" step="any">
   <select name="operation">
     <option value="+">Plus</option>
     <option value="-">Minus</option>
     <option value="*">Multiple</option>
     <option value="/">Divided by</option>
   </select>
-  <input name="num2">
+  <input name="num2" type="number" step="any">
   <button>calculate</button>
 </form>
 
